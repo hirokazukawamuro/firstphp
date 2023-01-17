@@ -1,0 +1,3 @@
+# vendorは除外なし
+# /vendor
+.env
