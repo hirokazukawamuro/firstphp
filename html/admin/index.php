@@ -1,7 +1,7 @@
 <?php
 include_once '../DbController.php';
-$ken = new DbController();
-$postList = $ken->getPostsAll();
+$db = new DbController();
+$postList = $db->getPostsAll();
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ $postList = $ken->getPostsAll();
 </head>
 <body>
     <h1>お問合せ履歴</h1>
-    <table>
+    <table border="1">
         <thead>
             <th>タイトル</th>
             <th>名前</th>
@@ -26,12 +26,12 @@ $postList = $ken->getPostsAll();
         <tbody>
             <?php foreach($postList as $post): ?>
                 <tr>
-                    <td><?php DbController::h($post['title']) ?></td>
-                    <td><?php DbController::h($post['name']) ?></td>
-                    <td><?php DbController::h($post['mailaddress']) ?></td>
-                    <td><?php DbController::h($post['content']) ?></td>
-                    <td><?php DbController::h($post['full_name']) ?></td>
-                    <td><?php DbController::h($post['created_at']) ?></td>
+                    <td><?php FormController::h($post['title']) ?></td>
+                    <td><?php FormController::h($post['name']) ?></td>
+                    <td><?php FormController::h($post['mailaddress']) ?></td>
+                    <td><?php FormController::h($post['content']) ?></td>
+                    <td><?php FormController::h($post['full_name']) ?></td>
+                    <td><?php FormController::h($post['created_at']) ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
