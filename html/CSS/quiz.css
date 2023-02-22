@@ -1,0 +1,67 @@
+html{
+  height: 100%;
+}
+
+body{
+  background-color: bisque;
+  padding: 5%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: x-large;
+  padding-bottom: 40px;
+}
+
+p{
+  padding-bottom: 30px;
+}
+
+#main {
+  text-align: center;
+}
+
+#main .btn{
+  background-color:blue;
+  color:aliceblue;
+  width:15%;
+  height: 50px;
+  border-radius: 10px;
+  padding:0.2rem;
+  padding-top:15px; 
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 30px; 
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+}
+
+
+img{
+  margin-bottom: 80px;
+  border-radius: 10px;
+  box-shadow: 10px solid rgb(81, 58, 58) ;
+
+}
+
+a {
+  background-color:rgb(140, 140, 168);
+  color:aliceblue;
+  width:10%;
+  height: 25px;
+  border-radius: 20px;
+  padding:1rem;
+  text-align: center;
+  opacity:0.7;
+}
+.tostart 
+{ 
+  text-align:right;
+}
